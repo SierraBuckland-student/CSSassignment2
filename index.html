@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>AwesomeFest 2020</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Rock+Salt&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>AwesomeFest</h1>
+        <h2> Coming to Barrie, Ontario</h2>
+        <h3> Summer 2020</h3>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main>
+        <section>
+         <p> A 2 day festival experience featuring all your favourite bands right here in your own backyard.</p>
+          <section class="images">
+           <div class="imgColumn">
+              <img src="css/images/awesomefest.jpg" alt="awesomefest concert picture">
+           </div>
+           <div class="imgColumn">
+            <img src="css/images/awesomefest3.jpg" alt="hands in the air">
+           </div>
+          </section>
+        </section>
+        <section>
+         <h3> Tickets </h3>
+         <table>
+           <caption>Ticket Pricing Information</caption>
+           <thead>
+             <tr>
+               <th scope="col">Ticket Type</th>
+               <th scope="col">Description</th>
+               <th scope="col">Cost</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Ultra Awesome Ticket</td>
+               <td>2 Day Camping Pass in VIP, exclusive section, VIP backstage access, Awesomefest Swag</td>
+               <td>$600.00</td>
+             </tr>
+
+             <tr>
+               <td>Super Awesome Ticket</td>
+               <td>1 Day Camping pass, Awesomefest Swag</td>
+               <td>$400.00</td>
+             </tr>
+
+             <tr>
+               <td>Awesome Ticket</td>
+               <td>One day access to main and side stage. Awesomefest beanie.</td>
+               <td>$200.00</td>
+             </tr>
+           </tbody>
+         </table>
+        </section>
+
+        <section id="form">
+          <!-- awesomefest purchase form -->
+          <div class="ticketForm">
+            <h2> Purchase Tickets </h2>
+              <form>
+          <!-- personal information of customer fields -->
+              <fieldset id="personInfo">
+                <div class="section"><legend>Personal Information:</legend></div>
+                <div class="inner-wrap">
+
+                  <label for="firstname">First Name:</label>
+                  <input id="firstname" type="text" name="firstname" required>
+
+                  <label for="lastname">Last Name:</label>
+                  <input id="lastname" type="text" name="lastname" required>
+
+                  <label for="emailaddress">Email Address:</label>
+                  <input id="emailaddress" type="email" name="email" required>
+
+                  <label for="phone">Phone number:</label> <!-- input for valid only tel number: -->
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+                </div>
+              </fieldset>
+
+          <!-- ticket type radio buttons -->
+              <fieldset id="ticketType">
+                <div class="section"><legend>Ticket Type:</legend></div>
+                <div class="inner-wrap">
+
+                  <input type="radio" id="awesomeTicket" checked="checked" name="typeTicket" value="awesomeTicket">
+                  <label class="radioContainer" for="awesomeTicket">Awesome Ticket</label> <br>
+
+                  <input type="radio" id="superTicket" name="typeTicket" value="superTicket">
+                  <label class="radioContainer" for="superTicket">Super Awesome Ticket</label> <br>
+
+                  <input type="radio" id="ultraTicket" name="typeTicket" value="ultraTicket">
+                  <label class="radioContainer" for="ultraTicket">Ultra Awesome Ticket</label> <br>
+
+                </div>
+              </fieldset>
+
+          <!-- credit card info and dropdown -->
+              <fieldset id="paymentInfo">
+                <div class="section"><legend>Payment Information:</legend></div>
+                    <div class="inner-wrap">
+
+                        <label for="creditCard">Credit Card Type:</label>
+                        <select id="creditCard" name="creditCard" required>
+                            <!-- disabled value makes user unable to select this value for the required input -->
+                           <option disabled selected value> -- select an option -- </option>
+                           <option value="visa">Visa</option>
+                           <option value="mastercard">MasterCard</option>
+                           <option value="amex">American Express</option>
+                           <option value="capitolOne">Capitol One</option>
+                           <option value="triangle">Triangle</option>
+                        </select>
+                         <!-- cc number -->
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" required>
+
+                </div>
+              </fieldset>
+
+          <!-- submit and reset form buttons -->
+              <fieldset id="formButton">
+                <div class="button-section">
+                   <span class="privacy-policy">
+                   <input type="checkbox" name="policyAgreement">  You agree to our Terms of Service and Refund Policy.
+                 </span> <br>
+                 <input type="submit" name="submit" value="Submit">
+                 <input type="reset" name="reset" value="Reset">
+               </div>
+             </fieldset>
+           </form>
+          </div>
+        </section>
+
+      </main>
+      <footer>
+        <p> Copyright AwesomeFest 2020 &copy;. All Rights Reserved.</p>
+      </footer>
+    </div><!--end wrapper-->
+  </body>
+</html>
